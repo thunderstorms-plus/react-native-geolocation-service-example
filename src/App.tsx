@@ -1,5 +1,7 @@
 import React from 'react';
 import Styled from 'styled-components/native';
+import Location from '~/CurrentLocation';
+// import Location from '~/WatchLocation';
 
 const Container = Styled.View`
     flex: 1;
@@ -7,14 +9,10 @@ const Container = Styled.View`
     align-items: center;
 `;
 
-const Label = Styled.Text`
-    font-size: 24px;
-`;
-
 const App = () => {
   return (
     <Container>
-      <Label>Hello World!</Label>
+      <Location />
     </Container>
   );
 };
