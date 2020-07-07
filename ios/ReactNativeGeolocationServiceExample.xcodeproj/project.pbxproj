@@ -17,6 +17,7 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* ReactNativeGeolocationServiceExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactNativeGeolocationServiceExampleTests.m */; };
+		550ACEA024B4336300FA667E /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550ACE9F24B4336300FA667E /* File.swift */; };
 		7214B6E58D524A833030A201 /* libPods-ReactNativeGeolocationServiceExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CFED864656FEBD588EC3B43 /* libPods-ReactNativeGeolocationServiceExampleTests.a */; };
 		8926F91A29F968BC8ABFD763 /* libPods-ReactNativeGeolocationServiceExample-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1B5B1E9CE8972C669FFF46 /* libPods-ReactNativeGeolocationServiceExample-tvOS.a */; };
 		930D24E00C23D958AF2B4905 /* libPods-ReactNativeGeolocationServiceExample-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 688D3017A60A6D770E7DEFF0 /* libPods-ReactNativeGeolocationServiceExample-tvOSTests.a */; };
@@ -55,6 +56,8 @@
 		1CFED864656FEBD588EC3B43 /* libPods-ReactNativeGeolocationServiceExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeGeolocationServiceExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* ReactNativeGeolocationServiceExample-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactNativeGeolocationServiceExample-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* ReactNativeGeolocationServiceExample-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactNativeGeolocationServiceExample-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		550ACE9E24B4336300FA667E /* ReactNativeGeolocationServiceExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactNativeGeolocationServiceExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		550ACE9F24B4336300FA667E /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		61E1C12CBA1025860C98230E /* Pods-ReactNativeGeolocationServiceExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeGeolocationServiceExample.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeGeolocationServiceExample/Pods-ReactNativeGeolocationServiceExample.debug.xcconfig"; sourceTree = "<group>"; };
 		688D3017A60A6D770E7DEFF0 /* libPods-ReactNativeGeolocationServiceExample-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeGeolocationServiceExample-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A11E85C4439A337A3FDC856 /* Pods-ReactNativeGeolocationServiceExample-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeGeolocationServiceExample-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeGeolocationServiceExample-tvOSTests/Pods-ReactNativeGeolocationServiceExample-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +150,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				550ACE9F24B4336300FA667E /* File.swift */,
+				550ACE9E24B4336300FA667E /* ReactNativeGeolocationServiceExample-Bridging-Header.h */,
 			);
 			name = ReactNativeGeolocationServiceExample;
 			sourceTree = "<group>";
@@ -290,6 +295,9 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1150;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -529,6 +537,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				550ACEA024B4336300FA667E /* File.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,6 +591,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 88E5C097F73C797FB221D4C2 /* Pods-ReactNativeGeolocationServiceExampleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -605,6 +615,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0B1B56B664988DB193335E9E /* Pods-ReactNativeGeolocationServiceExampleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = ReactNativeGeolocationServiceExampleTests/Info.plist;
@@ -626,6 +637,7 @@
 			baseConfigurationReference = 61E1C12CBA1025860C98230E /* Pods-ReactNativeGeolocationServiceExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				INFOPLIST_FILE = ReactNativeGeolocationServiceExample/Info.plist;
@@ -637,6 +649,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeGeolocationServiceExample;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeGeolocationServiceExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -646,6 +661,7 @@
 			baseConfigurationReference = DDBE9E0792BA064DA0B1E01F /* Pods-ReactNativeGeolocationServiceExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = ReactNativeGeolocationServiceExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -656,6 +672,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeGeolocationServiceExample;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeGeolocationServiceExample-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

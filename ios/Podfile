@@ -39,8 +39,6 @@ target 'ReactNativeGeolocationServiceExample' do
     # Pods for testing
   end
 
-  pod 'react-native-geolocation', path: '../node_modules/@react-native-community/geolocation'
-
   use_native_modules!
 end
 
